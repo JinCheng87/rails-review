@@ -1,0 +1,7 @@
+<h1>Reviews</h1>
+<a href="/review/new"><button>Add a review</button></a>
+<br>
+<% reviews.each_with_index do |review,index| %>
+    <%= index+1 %> <a href="/review/<%= review.id %>"><%= review.title %></a>
+    <br>
+<% end %>

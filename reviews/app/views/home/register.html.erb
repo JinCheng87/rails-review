@@ -1,0 +1,23 @@
+<h1>Sign Up</h1>
+<form method="post" action="/register_form">
+  <div>
+  <label>Email:</label>
+  <input type="email" name="email" value="<%= user.email %>" >
+  </div>
+
+  <div>
+    <label>Name:</label>
+    <input type="text" name="name" value="<%= user.name %>">
+  </div>
+
+  <div>
+    <label>Password:</label>
+    <input type="password" name="password" id="password" value="">
+  </div>
+
+  <div>
+    <label>Confirm Password:</label>
+    <input type="password" name="password" id="password" value="">
+  </div>
+  <button>Sign Up</button>
+</form>

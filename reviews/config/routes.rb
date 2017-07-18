@@ -1,3 +1,15 @@
 Rails.application.routes.draw do
   get '/', to: 'home#index'
+  get '/register', to: 'home#register'
+  get '/login', to: 'home#login'
+  get '/logout', to: 'home#logout'
+  get '/review', to: 'review#review_all'
+  get '/review/new', to: 'review#new'
+  get '/review/:id', to: 'review#id'
+  get '/review/:id/edit', to: 'review#edit_form'
+  post '/register_form', to:'home#register_form'
+  post '/login_form',to: 'home#login_form'
+  post '/review/new',to: 'review#review_form'
+  put '/review/:id/edit',to: 'review#edit'
+  delete '/review/:id/delete',to: 'review#delete'
 end

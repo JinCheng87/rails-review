@@ -1,4 +1,4 @@
-class user < ActiveRecord::Base
+class User < ActiveRecord::Base
   has_secure_password
   has_many :reviews
 
